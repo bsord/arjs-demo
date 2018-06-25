@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 RUN apt-get update; apt-get install nodejs npm git git-core -y
 
 # CLONE APP AND RUN NPM INSTALL
-RUN git clone https://github.com/bsord/SensorTrack ../app;npm install
+RUN git clone https://github.com/bsord/arjs-demo ../app;npm install
 
 EXPOSE 3001
 CMD ["npm", "start" ]
